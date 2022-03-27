@@ -1,0 +1,191 @@
+// start glubal rules
+@use "tablet.scss";
+
+$work: hsl(15, 100%, 70%);
+$play: hsl(195, 74%, 62%);
+$study: hsl(348, 100%, 68%);
+$exercise: hsl(145, 58%, 55%);
+$social: hsl(264, 64%, 52%);
+$self: hsl(43, 84%, 65%);
+
+$Blue: hsl(246, 80%, 60%);
+$Very-dark-blue: hsl(226, 43%, 10%);
+$Dark-blue: hsl(235, 46%, 20%);
+$Desaturated-blue: hsl(235, 45%, 61%);
+$Pale-Blue: hsl(236, 100%, 87%);
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background-color: $Very-dark-blue;
+  padding: 35px 5px;
+  font-family: "Rubik", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  @media (max-width: 620px) {
+    max-width: 500px;
+  }
+  @media (min-width: 767px) {
+    max-width: 740px;
+  }
+  @media (min-width: 991px) {
+    max-width: 950px;
+  }
+  @media (min-width: 1199px) {
+    max-width: 1150px;
+  }
+  @media (min-width: 1440px) {
+    max-width: 1250px;
+  }
+}
+// end glubal rules
+
+// start user
+.container {
+  display: grid;
+  gap: 20px;
+  .contain {
+    background-color: $Dark-blue;
+    border-radius: 15px;
+    .head {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: $Blue;
+      border-radius: 20px;
+      padding: 25px;
+      padding-bottom: 60px;
+      .image {
+        width: 50px;
+        height: 50px;
+        border: 3px white solid;
+        border-radius: 50%;
+        img {
+          width: 100%;
+        }
+      }
+      .use {
+        margin-left: 15px;
+        .port {
+          color: $Pale-Blue;
+          text-transform: capitalize;
+          font-size: 10px;
+        }
+        .name {
+          color: white;
+          font-size: 30px;
+          font-weight: 300;
+        }
+      }
+    }
+    .timed {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px 0;
+      .ti {
+        text-transform: capitalize;
+        color: $Pale-Blue;
+        cursor: pointer;
+        &.active {
+          color: white;
+        }
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+  // end user
+
+  // start tracker
+  .track {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    padding-bottom: 35px;
+    &.work {
+      background-color: $work;
+    }
+    &.play {
+      background-color: $play;
+    }
+    &.study {
+      background-color: $study;
+    }
+    &.exercise {
+      background-color: $exercise;
+    }
+    &.social {
+      background-color: $social;
+    }
+    &.self {
+      background-color: $self;
+    }
+    .back {
+      position: absolute;
+      width: 65px;
+      right: 5px;
+      top: -5px;
+    }
+    .timer {
+      background-color: $Dark-blue;
+      border-radius: 15px;
+      position: relative;
+      top: 35px;
+      padding: 20px;
+      transition: 0.2s;
+      cursor: pointer;
+      &:hover {
+        background-color: $Desaturated-blue;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3.sub {
+          margin: 0;
+          text-transform: capitalize;
+          color: white;
+          font-weight: 400;
+        }
+        i {
+          color: white;
+          cursor: pointer;
+          z-index: 10;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+    .info {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      .time {
+        color: white;
+        font-size: 30px;
+        font-weight: 300;
+        margin-top: 10px;
+      }
+      .analiz {
+        color: $Pale-Blue;
+      }
+    }
+  }
+}
+// end tracker

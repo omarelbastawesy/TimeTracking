@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>time tracker</title>
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="style/all.min.css" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- start user -->
+      <div class="contain">
+        <div class="head">
+          <div class="image">
+            <img src="images/image-jeremy.png" alt="" />
+          </div>
+          <div class="use">
+            <div class="port">report for</div>
+            <div class="name">Jeremy Robson</div>
+          </div>
+        </div>
+        <div class="timed">
+          <div class="day ti">daily</div>
+          <div class="week ti active">weekly</div>
+          <div class="month ti">monthly</div>
+        </div>
+      </div>
+      <!-- end user -->
+
+      <!-- start tracker -->
+      <div class="work track">
+        <img src="images/icon-work.svg" class="back" alt="" />
+        <div class="timer">
+          <div class="header">
+            <h3 class="sub">work</h3>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="info">
+            <div
+              data-day="6hrs"
+              data-week="32hrs"
+              data-month="5day"
+              class="time"
+            ></div>
+            <div
+              data-day="6hrs"
+              data-week="32hrs"
+              data-month="5day"
+              class="analiz"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="play track">
+        <img src="images/icon-play.svg" class="back" alt="" />
+        <div class="timer">
+          <div class="header">
+            <h3 class="sub">play</h3>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="info">
+            <div
+              data-day="1hrs"
+              data-week="10hrs"
+              data-month="1day"
+              class="time"
+            ></div>
+            <div
+              data-day="1hrs"
+              data-week="10hrs"
+              data-month="1day"
+              class="analiz"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="study track">
+        <img src="images/icon-study.svg" class="back" alt="" />
+        <div class="timer">
+          <div class="header">
+            <h3 class="sub">study</h3>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="info">
+            <div
+              data-day="50min"
+              data-week="4hrs"
+              data-month="18hrs"
+              class="time"
+            ></div>
+            <div
+              data-day="50min"
+              data-week="4hrs"
+              data-month="18hrs"
+              class="analiz"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="exercise track">
+        <img src="images/icon-exercise.svg" class="back" alt="" />
+        <div class="timer">
+          <div class="header">
+            <h3 class="sub">exercise</h3>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="info">
+            <div
+              data-day="50min"
+              data-week="4hrs"
+              data-month="18hrs"
+              class="time"
+            ></div>
+            <div
+              data-day="50min"
+              data-week="4hrs"
+              data-month="18hrs"
+              class="analiz"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="social track">
+        <img src="images/icon-social.svg" class="back" alt="" />
+        <div class="timer">
+          <div class="header">
+            <h3 class="sub">social</h3>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="info">
+            <div
+              data-day="1hrs"
+              data-week="5hrs"
+              data-month="1day"
+              class="time"
+            ></div>
+            <div
+              data-day="1hrs"
+              data-week="5hrs"
+              data-month="1day"
+              class="analiz"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="self track">
+        <img src="images/icon-self-care.svg" class="back" alt="" />
+        <div class="timer">
+          <div class="header">
+            <h3 class="sub">self care</h3>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="info">
+            <div
+              data-day="30min"
+              data-week="2hrs"
+              data-month="10hrs"
+              class="time"
+            ></div>
+            <div
+              data-day="30min"
+              data-week="2hrs"
+              data-month="10hrs"
+              class="analiz"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <!-- end tracker -->
+    </div>
+
+    <script src="JavaScript/main.js"></script>
+  </body>
+</html>
